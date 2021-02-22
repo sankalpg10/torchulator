@@ -1,0 +1,44 @@
+<html>
+<title>Pytorch Output Size Calculator</title>
+  <head>
+    <link rel="stylesheet" href="./src/style.css"/>
+  </head>
+  <body>
+    <h1 id="maintitle">Torchulator</h1>
+    <div id="layerselection">
+      <label for="layer">Choose a layer:</label>
+      <select name="layer" id="layer">
+        <option value="Conv1D">Conv1D</option>
+        <option value="Conv2D">Conv2D</option>
+        <option value="Conv3D">Conv3D</option>
+      </select>
+    </div>
+
+    <div>
+    	<h3 id="subtitle1">Please provide input dimensions in given boxes</h3>
+    	<div id="inputs">
+	    	<input type="text" id="Lin" value="Length of signal sequence (Only for Conv1D)">
+	    	<input type="text" id="Din" value="Depth (Only for Conv3D)">
+	    	<input type="text" id="Hin" value="Height (Only for Conv2D and Conv3D)">
+	    	<input type="text" id="Win" value="Width (Only for Conv2D and Conv3D)">
+    	</div>
+    	<div id="hyperparams">
+    		<input type="text" id="kernelsize" value="Kernel Size">
+    		<input type="text" id="padding" value="Padding">
+    		<input type="text" id="dilation" value="Dilation">
+    		<input type="text" id="stride" value="Stride">
+    	</div>
+
+    	<div id="outputs">
+    		<h3 align="center">Output Sizes</h3>
+    		<div id="Out"></div>
+    	</div>
+    	<div id="calculatebutton">
+    		<input type="button" onclick="main()" value="Calculate">
+    	</div>
+    </div>
+    <div id="errorboard">
+    </div>
+    <script src="./src/script.js"></script>
+  </body>
+</html>
