@@ -1,0 +1,30 @@
+#maintitle{
+  text-align: center;
+}
+#subtitle1{
+	text-align: center;
+}
+#layerselection{
+	text-align: center
+}
+#inputs{
+	margin-top: 20px;
+	text-align: center;
+}
+#hyperparams{
+	margin-top: 20px;
+	text-align: center;
+}
+#calculatebutton{
+	margin-top: 20px;
+	text-align: center;
+}
+#outputs{
+	margin-top: 20px;
+	text-align: center;
+}
+#errorboard{
+	margin-top: 20px;
+	text-align: center;
+	color: red;
+}
